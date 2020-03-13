@@ -1,6 +1,6 @@
 ---
 Layout: 
-Title: "Html<select>tag"
+Title: "Html tag"
 date: 2020-03-11
 Categories:
 ---
