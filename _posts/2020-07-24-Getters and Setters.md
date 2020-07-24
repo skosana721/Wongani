@@ -1,7 +1,7 @@
 ---
 Layout: 
 Title: "Getters and Setters function"
-date: 2020-07-24
+date: "2020-07-24"
 Categories:
 ---
 
@@ -49,6 +49,6 @@ Getters/setters can be used as wrappers over “real” property values to gain 
 
 For instance, if we want to forbid too short names for the user, we can have a setter name and keep the value in a separate property _name:
 
-# Conclusion
+## Conclusion
 
 I had a problem with "Use getters and setters to control access to an object" at freecodecamp which required me to create a class Thermostat, and I had to convert Fahrenheit to celsius, but converting was the problem, I did some research and watched some videos to understand converting Fahrenheit to celsius with JavaScript. 
