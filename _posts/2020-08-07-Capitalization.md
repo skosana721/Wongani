@@ -41,6 +41,6 @@ function capitalizeWord(word) {
 
 ## Conclusion 
 
-This kata taught me a lot about things that I did not know and it made things to be easy when I was doing the slice(a) challenge in freecodecamp.
+This kata taught me a lot about things that I did not know and it made things to be easy when I was doing the slice() challenge in freecodecamp.
 
 
