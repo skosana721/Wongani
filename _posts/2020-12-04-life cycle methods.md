@@ -1,7 +1,7 @@
 ---
 Layout: 
-Title: "function"
-date: "2020-09-04"
+Title: "lifecycle methods"
+date: "2020-12-04"
 Categories:
 ---
 
