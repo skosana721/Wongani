@@ -12,19 +12,19 @@ I'm going to talk about the react life cycle methods.
 
 ### What are react lifecycle methods?
 
-React components have several special methods that provide opportunities to perform actions at specific points in the lifecycle of a component. These are called lifecycle methods, or lifecycle hooks, and allow you to catch components at certain point in time. This can be before hey are rendered, before they update, before they receive props, before they unmount, and so on.
+React components have several special methods that provide opportunities to perform actions at specific points in the lifecycle of a component. These are called lifecycle methods or lifecycle hooks, and allow you to catch components at a certain point in time. This can be before they are rendered, before they update, before they receive props, before they unmount, and so on.
 
 Most used lifecycle methods:
 
 ### render()
 
-The render() method is the most used lifecycle method which  you will only see in the React class based components. The render() method returns JSX that is displayed in the UI and it can also return a null if there is nothing to render for that component.
+The render() method is the most used lifecycle method which you will only see in the React class-based components. The render() method returns JSX that is displayed in the UI and it can also return a null if there is nothing to render for that component.
 
 ### componentDidMount()
 
-componentDidMount() is called as soon as the component is mounted and ready. This is a good place to initiate API calls, if you need to load data from a remote endpoint.
+componentDidMount() is called as soon as the component is mounted and ready. This is a good place to initiate API calls if you need to load data from a remote endpoint.
 
-On the exercise that moral gave of finding the students average,and top student. The data that was submitted it was stored in localStorage and I used componentDidMount() to get the data stored in localStorage when the app loaded and the reason for doing that was because if I tried map without using method componentDidMount() the console would throw an error saying that "TypeError: Cannot read property 'map' of null". To solve my problem that is when I had to implement componentDidMount().
+On the exercise that moral gave of finding the students average, and top student. The data that was submitted was stored in localStorage and I used componentDidMount() to get the data stored in localStorage when the app loaded and the reason for doing that was because if I tried map without using method componentDidMount() the console would throw an error saying that "TypeError: Cannot read property 'map' of null". To solve my problem that is when I had to implement componentDidMount().
 
 My solution:
 
@@ -54,4 +54,4 @@ My solution:
 
   ## Conclusion
 
-  In conclusion doing daily JavaScript and react practice is help me to know thing that I did not know and also I am noticing a change in mindset when I am faced with a problem. 
+  In conclusion, doing daily JavaScript and react practice is helping me to know the thing that I did not know and also I am noticing a change in mindset when I am faced with a problem. 
