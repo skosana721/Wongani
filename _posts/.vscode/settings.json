@@ -10,6 +10,7 @@
         "handleclick",
         "handlerclick",
         "lockdown",
-        "toolchain"
+        "toolchain",
+        "unmount"
     ]
 }
