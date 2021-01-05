@@ -1,80 +1,39 @@
-/* .card {   
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  }  */
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background-image:url("https://cdn.pixabay.com/photo/2020/03/08/22/50/laughing-kookaburra-4913972_960_720.jpg");
-   
 }
- 
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-  back
-} 
-.header h1 {
-  font-size: 50px;
-}
-
-
-.topnav {
+.nav-bar {
   overflow: hidden;
   background-color: #333;
+  height: 100px;
 }
-
-
-.topnav a {
-  float: left;
+.nav-bar a {
+  float: right;
   display: block;
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 40px 24px;
   text-decoration: none;
 }
-
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.nav-bar li{
+  list-style: none;
+  font-size: 15px;
 }
-
-.leftcolumn {   
+.nav-bar h1{
   float: left;
-  width: 73.9%;
+  font-family: 'Alfa Slab One', cursive;
+  padding: 15px 60px;
+  font-size: 60px;
+  background: -webkit-linear-gradient(purple, lightblue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-bar li :hover{
+  color: powderblue;
+  font-size: 20px;
 }
 
 
-.rightcolumn {
-  float: right;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-  background-image: url("https://cdn.pixabay.com/photo/2020/03/06/08/07/fantasy-4906330_960_720.jpg");
-  background-position: cover;
-  background-repeat: no-repeat;
-  color: whitesmoke;
-}
-.right-card{
-  background-color: white;
-   padding: 20px;
-  margin-top: 20px;
-  
-
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
