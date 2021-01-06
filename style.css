@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,body{
+  height: 100%;
+}
 .nav-bar {
   overflow: hidden;
   background-color: #333;
@@ -29,11 +32,18 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: -5px -6px 1px white;
 }
 .nav-bar li :hover{
   color: powderblue;
   font-size: 20px;
 }
 
+main{
+  height: 100%;
+  background-image: url("img/pexels-josh-sorenson-1714208.jpg");
+  background-position: center;
+  background-size: cover;
+}
 
 
