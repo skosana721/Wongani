@@ -1,5 +1,5 @@
 ---
-layout:
+Layout:
 Title: "Redux persist"
 date: 2021-02-23
 Categories:
