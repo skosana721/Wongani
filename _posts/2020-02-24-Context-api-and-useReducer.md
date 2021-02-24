@@ -1,7 +1,7 @@
 ---
 Layout:
 Title: "Context api and useReducer hook"
-date: 2021-02-22
+date: 2021-02-24
 Categories:
 ---
 
