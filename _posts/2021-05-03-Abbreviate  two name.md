@@ -1,6 +1,6 @@
 ---
 Layout:
-Title:'Abbreviate a two name'
+Title:'Abbreviate  two name'
 date: 2021-05-03
 ---
 
