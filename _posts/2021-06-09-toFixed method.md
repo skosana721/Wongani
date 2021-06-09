@@ -1,7 +1,7 @@
 ---
 Layout:
 Title: "toFixed method"
-date: 2021-06-07
+date: 2021-06-09
 ---
 
 ## Introduction
