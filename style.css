@@ -2050,6 +2050,7 @@ a, button, .btn {
   margin-bottom: var(--spacing-lg);
   transition: all var(--transition-fast);
   font-family: var(--font-primary);
+  box-sizing: border-box;
 }
 
 .php-email-form .form-control:focus {
@@ -2073,6 +2074,8 @@ a, button, .btn {
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
   transition: all var(--transition-base);
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .php-email-form button[type="submit"]:hover {
@@ -2135,6 +2138,7 @@ a, button, .btn {
   margin: 0 -15px;
 }
 
+.col-12,
 .col-lg-3,
 .col-lg-4,
 .col-lg-6,
