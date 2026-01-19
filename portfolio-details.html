@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Details - Wongani Skosana</title>
+    <meta name="description" content="Portfolio project details - Wongani Skosana" />
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css" rel="stylesheet">
+    <!-- GLightbox -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="assets/js/index.js" defer></script>
+  </head>
+  <body class="portfolio-details-page">
+    <!-- Sidebar Navigation -->
+    <header id="header" class="header d-flex flex-column justify-content-center">
+      <i class="header-toggle d-xl-none bi bi-list" aria-label="Toggle menu"></i>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#home"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+          <li><a href="index.html#skills"><i class="bi bi-code-slash navicon"></i><span>Skills</span></a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+          <li><a href="index.html#blog"><i class="bi bi-journal-text navicon"></i><span>Blog</span></a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="container">
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Portfolio Details</li>
+            </ol>
+          </nav>
+          <h1 id="portfolio-title">Portfolio Details</h1>
+        </div>
+      </div>
+
+      <!-- Portfolio Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up">
+          <div class="portfolio-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="https://via.placeholder.com/1200x800/6366f1/ffffff?text=Project+Screenshot+1" alt="Project Screenshot 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://via.placeholder.com/1200x800/10b981/ffffff?text=Project+Screenshot+2" alt="Project Screenshot 2">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://via.placeholder.com/1200x800/f59e0b/ffffff?text=Project+Screenshot+3" alt="Project Screenshot 3">
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="row justify-content-between gy-4 mt-4">
+            <div class="col-lg-8" data-aos="fade-up">
+              <div class="portfolio-description">
+                <h2 id="project-name">Project Name</h2>
+                <p id="project-description">
+                  Detailed project description will be loaded here based on the project parameter.
+                </p>
+                <div id="project-features"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="portfolio-info">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><strong>Category</strong> <span id="project-category">Web Application</span></li>
+                  <li><strong>Client</strong> <span id="project-client">Personal Project</span></li>
+                  <li><strong>Project Date</strong> <span id="project-date">2024</span></li>
+                  <li><strong>Project URL</strong> <a href="#" id="project-url" target="_blank" rel="noopener noreferrer">GitHub Link</a></li>
+                  <li><a href="#" id="project-demo" class="btn-visit align-self-start" target="_blank" rel="noopener noreferrer">Visit Project</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <h3 class="sitename">Wongani Skosana</h3>
+        <p>Passionate software developer building modern web applications and sharing knowledge through technical blog posts.</p>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/skosana721" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+          <a href="https://skosana721.github.io/Wongani/blog" target="_blank" rel="noopener noreferrer"><i class="bi bi-journal-text"></i></a>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <span>Copyright</span> <strong class="px-1 sitename">Wongani Skosana</strong> <span>All Rights Reserved</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    
+    <script>
+      // Load project details based on URL parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const project = urlParams.get('project') || 'shopping-cart';
+      
+      const projects = {
+        'shopping-cart': {
+          name: 'Shopping Cart',
+          category: 'React & Redux',
+          description: 'A fully functional React shopping cart application that implements Redux for state management and Redux Persist for data persistence. Features include add to cart, quantity management, checkout functionality, and persistent cart data across page refreshes.',
+          features: `
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Redux state management</li>
+              <li><i class="bi bi-check-circle"></i> Redux Persist for data persistence</li>
+              <li><i class="bi bi-check-circle"></i> Add/remove items from cart</li>
+              <li><i class="bi bi-check-circle"></i> Quantity management</li>
+              <li><i class="bi bi-check-circle"></i> Checkout functionality</li>
+            </ul>
+          `,
+          date: '2024',
+          url: 'https://github.com/skosana721/Moral-Activities/tree/main/shopping-cart',
+          demo: 'https://github.com/skosana721/Moral-Activities/tree/main/shopping-cart'
+        },
+        'recipe-box': {
+          name: 'Recipe Box',
+          category: 'React & Firebase',
+          description: 'A recipe management application where users can add, edit, and delete recipes with their ingredients. Built with React and Firebase for real-time data synchronization. Features include CRUD operations, ingredient management, and an intuitive user interface.',
+          features: `
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Create, read, update, delete recipes</li>
+              <li><i class="bi bi-check-circle"></i> Firebase real-time database</li>
+              <li><i class="bi bi-check-circle"></i> Ingredient management</li>
+              <li><i class="bi bi-check-circle"></i> Modern React patterns</li>
+              <li><i class="bi bi-check-circle"></i> Intuitive user interface</li>
+            </ul>
+          `,
+          date: '2024',
+          url: 'https://github.com/skosana721/recipe-box',
+          demo: 'https://github.com/skosana721/recipe-box'
+        },
+        'calculator': {
+          name: 'JavaScript Calculator',
+          category: 'Vanilla JavaScript',
+          description: 'A clean and functional calculator application built with vanilla JavaScript. Supports basic arithmetic operations including addition, subtraction, multiplication, and division. Features include a responsive design and smooth user interactions.',
+          features: `
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Basic arithmetic operations</li>
+              <li><i class="bi bi-check-circle"></i> Clean user interface</li>
+              <li><i class="bi bi-check-circle"></i> Responsive design</li>
+              <li><i class="bi bi-check-circle"></i> Vanilla JavaScript implementation</li>
+            </ul>
+          `,
+          date: '2024',
+          url: 'https://github.com/skosana721/Calculator',
+          demo: 'https://github.com/skosana721/Calculator'
+        }
+      };
+      
+      const projectData = projects[project] || projects['shopping-cart'];
+      
+      document.getElementById('portfolio-title').textContent = projectData.name;
+      document.getElementById('project-name').textContent = projectData.name;
+      document.getElementById('project-description').innerHTML = projectData.description;
+      document.getElementById('project-features').innerHTML = projectData.features;
+      document.getElementById('project-category').textContent = projectData.category;
+      document.getElementById('project-date').textContent = projectData.date;
+      document.getElementById('project-url').href = projectData.url;
+      document.getElementById('project-url').textContent = 'View on GitHub';
+      document.getElementById('project-demo').href = projectData.demo;
+    </script>
+  </body>
+</html>

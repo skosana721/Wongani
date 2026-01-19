@@ -201,7 +201,7 @@ img {
   
   .hero {
     margin-left: -160px;
-    width: calc(100vw - 160px);
+    width: 100vw;
   }
 }
 
@@ -209,28 +209,6 @@ img {
   left: 0;
 }
 
-.header .header-toggle {
-  color: var(--color-bg);
-  background-color: var(--color-primary);
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 9999;
-  transition: background-color 0.3s;
-  border: none;
-}
-
-.header .header-toggle:hover {
-  background-color: var(--color-primary-dark);
-}
 
 /* Navigation Menu */
 .navmenu {
@@ -933,7 +911,7 @@ img {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-lg);
   margin-top: var(--spacing-lg);
 }
@@ -1666,6 +1644,7 @@ a, button, .btn {
   padding-bottom: var(--spacing-sm);
   display: flex;
   align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 .about .content ul li i {
@@ -1678,10 +1657,12 @@ a, button, .btn {
 .about .content ul li strong {
   color: var(--color-text-dark);
   margin-right: var(--spacing-sm);
+  white-space: nowrap;
 }
 
 .about .content ul li span {
   color: var(--color-text-light);
+  white-space: nowrap;
 }
 
 .hobbies-list-inline {
@@ -2207,10 +2188,6 @@ a, button, .btn {
   margin-top: var(--spacing-xl);
 }
 
-.gy-4 > *:first-child {
-  margin-top: 0;
-}
-
 .fst-italic {
   font-style: italic;
 }
@@ -2467,7 +2444,6 @@ a, button, .btn {
 
 @media print {
   .header,
-  .header-toggle,
   .hero-buttons,
   footer {
     display: none;
