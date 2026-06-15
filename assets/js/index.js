@@ -56,8 +56,18 @@ const initScrollAnimations = () => {
 // ========================================
 const initSidebarNav = () => {
   const header = document.querySelector('#header');
+  const headerToggle = document.querySelector('.header-toggle');
   
   if (!header) return;
+
+  // Mobile menu toggle
+  if (headerToggle) {
+    headerToggle.addEventListener('click', () => {
+      header.classList.toggle('header-show');
+      headerToggle.classList.toggle('bi-list');
+      headerToggle.classList.toggle('bi-x');
+    });
+  }
 
   // Close sidebar when clicking on a link (mobile)
   const navLinks = document.querySelectorAll('.navmenu a');
@@ -65,6 +75,10 @@ const initSidebarNav = () => {
     link.addEventListener('click', () => {
       if (window.innerWidth <= 1199) {
         header.classList.remove('header-show');
+        if (headerToggle) {
+          headerToggle.classList.add('bi-list');
+          headerToggle.classList.remove('bi-x');
+        }
       }
     });
   });
@@ -73,6 +87,10 @@ const initSidebarNav = () => {
   window.addEventListener('resize', () => {
     if (window.innerWidth > 1199) {
       header.classList.remove('header-show');
+      if (headerToggle) {
+        headerToggle.classList.add('bi-list');
+        headerToggle.classList.remove('bi-x');
+      }
     }
   });
 

@@ -1795,10 +1795,11 @@ a, button, .btn {
 }
 
 /* ========================================
-   Portfolio Filtering & Layout
+   Portfolio Filtering & Layout (MyResume Style)
    ======================================== */
 .portfolio.section {
   padding: var(--section-padding-y) 0;
+  background-color: var(--color-bg);
 }
 
 .portfolio-filters {
@@ -1821,6 +1822,7 @@ a, button, .btn {
   color: var(--color-text);
   background-color: var(--color-bg-light);
   border: 1px solid var(--color-border);
+  font-family: var(--font-heading);
 }
 
 .portfolio-filters li:hover,
@@ -1828,74 +1830,115 @@ a, button, .btn {
   color: var(--color-bg);
   background-color: var(--color-primary);
   border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.portfolio-filters li:first-child {
+  margin-left: 0;
+}
+
+.portfolio-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .portfolio-filters li {
+    font-size: var(--font-size-sm);
+    margin: 0 0 var(--spacing-sm) 0;
+    display: block;
+  }
 }
 
 .portfolio-item {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-lg);
-  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.portfolio-item:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
 }
 
 .portfolio-item img {
-    width: 100%;
+  width: 100%;
   height: auto;
-  transition: transform var(--transition-base);
+  display: block;
+  transition: transform 0.5s ease;
 }
 
 .portfolio-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .portfolio-info {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: var(--spacing-xl);
   opacity: 0;
-  transition: opacity var(--transition-base);
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -100%;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0.98) 100%);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(10px);
 }
 
 .portfolio-item:hover .portfolio-info {
   opacity: 1;
+  bottom: 0;
 }
 
 .portfolio-info h4 {
-  color: var(--color-bg);
+  color: var(--color-text-dark);
   font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   margin-bottom: var(--spacing-xs);
+  padding-right: 50px;
 }
 
 .portfolio-info p {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-text-light);
   font-size: var(--font-size-sm);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 0;
+  padding-right: 50px;
 }
 
-.portfolio-info a {
+.portfolio-info .preview-link,
+.portfolio-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 14px);
+  color: var(--color-text);
+  transition: 0.3s;
+  line-height: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--color-primary);
-  color: var(--color-bg);
+  background-color: transparent;
   border-radius: 50%;
-  margin-right: var(--spacing-sm);
-  transition: all var(--transition-fast);
 }
 
-.portfolio-info a:hover {
-  background-color: var(--color-primary-dark);
-  transform: translateY(-2px);
+.portfolio-info .preview-link:hover,
+.portfolio-info .details-link:hover {
+  color: var(--color-primary);
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+.portfolio-info .details-link {
+  right: 14px;
+  font-size: 28px;
 }
 
 .portfolio-info a i {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
 }
 
 /* ========================================

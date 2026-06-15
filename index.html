@@ -73,6 +73,8 @@
   <body>
     <!-- Sidebar Navigation -->
     <header id="header" class="header d-flex flex-column justify-content-center">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#home" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
@@ -469,7 +471,7 @@
               <div class="portfolio-info">
                 <h4>Shopping Cart</h4>
                 <p>React & Redux</p>
-                <a href="assets/img/pexels-josh-sorenson-1714208.jpg" title="Shopping Cart" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/pexels-josh-sorenson-1714208.jpg" title="Shopping Cart" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html?project=shopping-cart" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -479,19 +481,79 @@
               <div class="portfolio-info">
                 <h4>Recipe Box</h4>
                 <p>React & Firebase</p>
-                <a href="assets/img/pexels-philippe-donn-1114690.jpg" title="Recipe Box" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/pexels-philippe-donn-1114690.jpg" title="Recipe Box" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html?project=recipe-box" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webapp">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webapp filter-nodejs">
               <img src="assets/img/pexels-evie-shaffer-4004374 .jpg" class="img-fluid" alt="JavaScript Calculator">
               <div class="portfolio-info">
                 <h4>JavaScript Calculator</h4>
                 <p>Vanilla JavaScript</p>
-                <a href="assets/img/pexels-evie-shaffer-4004374 .jpg" title="JavaScript Calculator" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="assets/img/pexels-evie-shaffer-4004374 .jpg" title="JavaScript Calculator" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html?project=calculator" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-          </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-react filter-fullstack">
+              <img src="assets/img/pexels-josh-sorenson-1714208.jpg" class="img-fluid" alt="E-Commerce Platform">
+              <div class="portfolio-info">
+                <h4>E-Commerce Platform</h4>
+                <p>MERN Stack</p>
+                <a href="assets/img/pexels-josh-sorenson-1714208.jpg" title="E-Commerce Platform" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html?project=ecommerce" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-nodejs filter-fullstack">
+              <img src="assets/img/pexels-philippe-donn-1114690.jpg" class="img-fluid" alt="REST API">
+              <div class="portfolio-info">
+                <h4>REST API Service</h4>
+                <p>Node.js & Express</p>
+                <a href="assets/img/pexels-philippe-donn-1114690.jpg" title="REST API Service" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html?project=rest-api" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webapp filter-react">
+              <img src="assets/img/pexels-evie-shaffer-4004374 .jpg" class="img-fluid" alt="Task Manager">
+              <div class="portfolio-info">
+                <h4>Task Manager</h4>
+                <p>React & Redux Toolkit</p>
+                <a href="assets/img/pexels-evie-shaffer-4004374 .jpg" title="Task Manager" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html?project=task-manager" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack filter-react">
+              <img src="assets/img/pexels-josh-sorenson-1714208.jpg" class="img-fluid" alt="Social Media Dashboard">
+              <div class="portfolio-info">
+                <h4>Social Media Dashboard</h4>
+                <p>React & MongoDB</p>
+                <a href="assets/img/pexels-josh-sorenson-1714208.jpg" title="Social Media Dashboard" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html?project=social-dashboard" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-nodejs filter-fullstack">
+              <img src="assets/img/pexels-philippe-donn-1114690.jpg" class="img-fluid" alt="Blog Platform">
+              <div class="portfolio-info">
+                <h4>Blog Platform</h4>
+                <p>Node.js & PostgreSQL</p>
+                <a href="assets/img/pexels-philippe-donn-1114690.jpg" title="Blog Platform" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html?project=blog-platform" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webapp filter-react">
+              <img src="assets/img/pexels-evie-shaffer-4004374 .jpg" class="img-fluid" alt="Weather App">
+              <div class="portfolio-info">
+                <h4>Weather App</h4>
+                <p>React & API Integration</p>
+                <a href="assets/img/pexels-evie-shaffer-4004374 .jpg" title="Weather App" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html?project=weather-app" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
             </div>
           </div>
         </div>
