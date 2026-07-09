@@ -439,6 +439,14 @@ const initContactForm = () => {
 };
 
 // ========================================
+// Copyright Year
+// ========================================
+const initCopyrightYear = () => {
+  const yearEl = document.getElementById('copyright-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+};
+
+// ========================================
 // Initialize Everything
 // ========================================
 const init = () => {
@@ -462,6 +470,7 @@ const init = () => {
     initGLightbox();
     initTyped();
     initContactForm();
+    initCopyrightYear();
   } catch (error) {
     console.error('Error initializing portfolio:', error);
   }

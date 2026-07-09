@@ -1871,8 +1871,27 @@ a, button, .btn {
   }
 }
 
+.isotope-container.portfolio-grid {
+  position: relative;
+  margin: 0 -12px;
+}
+
 .portfolio-item {
-  height: 100%;
+  width: 100%;
+  padding: 0 12px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .portfolio-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    width: 33.333333%;
+  }
 }
 
 .portfolio-card {
